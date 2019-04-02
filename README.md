@@ -7,3 +7,9 @@ Monitor your ethereum node. This monitor simply provides you with a health check
 ```
 docker run -i --rm -e ETHEREUM_ENDPOINT=https://kovan.arkane.network -p 8080:8080 cindercloud/ethereum-node-monitor:latest
 ```
+
+## Health Checks
+
+[x] Sync Status
+[ ] Mining Status
+[ ] Diskspace Status
