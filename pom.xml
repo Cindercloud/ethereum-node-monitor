@@ -11,6 +11,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <quarkus.version>0.12.0</quarkus.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <web3j.version>4.2.0</web3j.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -25,8 +26,9 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy</artifactId>
+      <groupId>org.web3j</groupId>
+      <artifactId>core</artifactId>
+      <version>${web3j.version}</version>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
@@ -37,6 +39,10 @@
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-health</artifactId>
     </dependency>
   </dependencies>
   <build>
