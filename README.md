@@ -10,6 +10,6 @@ docker run -i --rm -e ETHEREUM_ENDPOINT=https://kovan.arkane.network -p 8080:808
 
 ## Health Checks
 
-[x] Sync Status
-[ ] Mining Status
-[ ] Diskspace Status
+- [x] Sync Status
+- [ ] Mining Status
+- [ ] Diskspace Status
